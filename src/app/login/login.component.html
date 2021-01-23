@@ -1,0 +1,23 @@
+<mat-card>
+  <form [formGroup]="form" (mgSubmit)="auth.login(form.value)">
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Email"
+        type="email"
+        fromControlName="email"
+      />
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Password"
+        type="password"
+        formControlName="password"
+      />
+    </mat-form-field>
+    <br />
+    <button mat-raised-button color="primary">Login</button>
+  </form>
+</mat-card>
