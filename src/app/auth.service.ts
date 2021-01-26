@@ -14,6 +14,11 @@ export class AuthService {
       .subscribe((res) => {
         this.authenticate(res);
       });*/
-    console.log(credentials);
+    console.log('User logged in values are: ', credentials);
+  }
+
+  //Create User
+  createUser(credentials: any) {
+    console.log('Credentials are: ', credentials);
   }
 }

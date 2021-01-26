@@ -16,7 +16,7 @@ export class LoginComponent {
     });
   }
 
-  register() {
+  /* register() {
     console.log(this.form);
-  }
+  }*/
 }
