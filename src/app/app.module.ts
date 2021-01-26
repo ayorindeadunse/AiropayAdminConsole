@@ -17,6 +17,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
+import { CustomerApplicationsComponent } from './customer-applications/customer-applications.component';
+import { UserManagementComponent } from './user-management/user-management.component';
 
 const routes = [
   {
@@ -26,7 +28,7 @@ const routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, LoginComponent],
+  declarations: [AppComponent, NavComponent, LoginComponent, CustomerApplicationsComponent, UserManagementComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

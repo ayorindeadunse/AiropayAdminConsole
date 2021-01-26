@@ -1,0 +1,11 @@
+{
+  "name": "airopay-admin-backend",
+  "version": "1.0.0",
+  "description": "Rest API for the Airopay Admin Console",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ayorinde Adunse",
+  "license": "MIT"
+}
