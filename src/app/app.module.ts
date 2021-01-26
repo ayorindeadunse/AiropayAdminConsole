@@ -25,10 +25,24 @@ const routes = [
     path: 'login',
     component: LoginComponent,
   },
+  {
+    path: 'createUser',
+    component: UserManagementComponent,
+  },
+  {
+    path: 'customermgt',
+    component: CustomerApplicationsComponent,
+  },
 ];
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, LoginComponent, CustomerApplicationsComponent, UserManagementComponent],
+  declarations: [
+    AppComponent,
+    NavComponent,
+    LoginComponent,
+    CustomerApplicationsComponent,
+    UserManagementComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

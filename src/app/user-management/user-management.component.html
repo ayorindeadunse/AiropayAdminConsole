@@ -3,13 +3,26 @@
     <mat-form-field>
       <input
         matInput
+        placeholder="username"
+        type="text"
+        fromControlName="username"
+      />
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <input matInput placeholder="role" type="text" fromControlName="role" />
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <input
+        matInput
         placeholder="Email"
         type="email"
         fromControlName="email"
       />
     </mat-form-field>
     <br />
-    <mat-form-field>
+    <!--  #create default password on backend <mat-form-field>
       <input
         matInput
         placeholder="Password"
@@ -17,7 +30,7 @@
         formControlName="password"
       />
     </mat-form-field>
-    <br />
-    <button mat-raised-button color="primary">Login</button>
+    <br />-->
+    <button mat-raised-button color="primary">Create User</button>
   </form>
 </mat-card>
