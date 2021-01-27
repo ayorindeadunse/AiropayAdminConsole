@@ -8,11 +8,14 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./user-management.component.css'],
 })
 export class UserManagementComponent {
+  roles: any[] = [{ name: '' }, { name: 'admin' }, { name: 'support' }];
+
   form;
   constructor(private fb: FormBuilder, public auth: AuthService) {
     this.form = fb.group({
+      username: ['', Validators.required],
+      userrole: ['', Validators.required],
       email: ['', Validators.required],
-      password: ['', Validators.required],
     });
   }
 

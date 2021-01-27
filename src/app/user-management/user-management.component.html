@@ -1,24 +1,30 @@
 <mat-card>
-  <form [formGroup]="form" (mgSubmit)="auth.createUser(form.value)">
+  <form [formGroup]="form" (ngSubmit)="auth.createUser(form.value)">
     <mat-form-field>
       <input
         matInput
         placeholder="username"
         type="text"
-        fromControlName="username"
+        formControlName="username"
       />
     </mat-form-field>
     <br />
-    <mat-form-field>
+    <!--  <mat-form-field>
       <input matInput placeholder="role" type="text" fromControlName="role" />
-    </mat-form-field>
+    </mat-form-field>-->
+    <mat-label>User Role</mat-label>
+    <mat-select formControlName="userrole">
+      <mat-option *ngFor="let role of roles" [value]="role.name">
+        {{ role.name }}
+      </mat-option>
+    </mat-select>
     <br />
     <mat-form-field>
       <input
         matInput
         placeholder="Email"
         type="email"
-        fromControlName="email"
+        formControlName="email"
       />
     </mat-form-field>
     <br />
@@ -31,6 +37,6 @@
       />
     </mat-form-field>
     <br />-->
-    <button mat-raised-button color="primary">Create User</button>
+    <button mat-raised-button color="primary" type="submit">Create User</button>
   </form>
 </mat-card>

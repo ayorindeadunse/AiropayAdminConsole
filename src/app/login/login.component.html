@@ -1,11 +1,11 @@
 <mat-card>
-  <form [formGroup]="form" (mgSubmit)="auth.login(form.value)">
+  <form [formGroup]="form" (ngSubmit)="auth.login(form.value)">
     <mat-form-field>
       <input
         matInput
         placeholder="Email"
         type="email"
-        fromControlName="email"
+        formControlName="email"
       />
     </mat-form-field>
     <br />
