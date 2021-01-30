@@ -12,6 +12,8 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MatSelectModule } from '@angular/material/select';
@@ -57,6 +59,8 @@ const routes = [
     HttpClientModule,
     ReactiveFormsModule,
     MatSelectModule,
+    MatTableModule,
+    MatPaginatorModule,
     RouterModule.forRoot(routes),
   ],
   providers: [AuthService],
