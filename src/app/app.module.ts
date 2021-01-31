@@ -13,6 +13,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
 
 // Don't import MatTableDataSource as you'd might have issues with the ngcc during compilation
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -67,6 +68,7 @@ const routes = [
     MatTableModule,
     MatPaginatorModule,
     MatInputModule,
+    MatSortModule,
     RouterModule.forRoot(routes),
   ],
   providers: [AuthService],

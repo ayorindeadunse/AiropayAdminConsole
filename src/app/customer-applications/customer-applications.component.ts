@@ -2,6 +2,9 @@ import { MatPaginator } from '@angular/material/paginator';
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 
+// implement sorting
+import { MatSort } from '@angular/material/sort';
+
 @Component({
   selector: 'app-customer-applications',
   templateUrl: './customer-applications.component.html',
@@ -14,9 +17,12 @@ export class CustomerApplicationsComponent implements AfterViewInit {
   // the response object containing the data to be displayed on the table.
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
+  // Mat Sort
+  @ViewChild(MatSort, { static: true }) sort: MatSort;
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
   }
 }
 
