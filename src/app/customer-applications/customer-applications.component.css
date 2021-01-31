@@ -1,5 +1,5 @@
-mat-card {
-  width: 40%;
+.mat-card-body {
+  width: 80%;
   margin: 1rem auto;
 }
 
